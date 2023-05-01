@@ -8,7 +8,13 @@ git clone git@github.com:Ericson-WebDeveloper/ClickApp.git
 
 # api
 
-First open new terminal and type cd api to access api directory and run this command to install the dependencies, and setup your .env file.
+First open new terminal and type cd api to access api directory and 
+
+```
+cd api
+```
+
+run this command to install the dependencies, and setup your .env file.
 
 ```
 composer install
@@ -44,7 +50,13 @@ php artisan serve
 
 # client
 
-First open new terminal and type cd client to access client directory and run this command install the dependencies
+First open new terminal and type cd client to access client directory
+
+```
+cd client
+```
+
+run this command to install the dependencies
 
 ```
 npm install
