@@ -1,6 +1,8 @@
 <?php
 
-use Illuminate\Http\Request;
+
+use App\Http\Controllers\ClickController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,10 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+Route::get('/clicks', [ClickController::class, 'index'])->middleware('throttle:1000');
+
+Route::post('/clicks', [ClickController::class, 'create'])->middleware('throttle:1000');
