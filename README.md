@@ -18,7 +18,7 @@ cp .env.example .env
 Then create the necessary database.
 
 ```
-create database pgsql with name of clicks
+create database in pgsql with name of clicks database
 setup env database credentials for pgsql please check .env.example for this
 ```
 
