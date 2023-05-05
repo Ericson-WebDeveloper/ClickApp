@@ -1,9 +1,9 @@
 # setup 
 
-First clone this repository
+First clone this repository or download via zip
 
 ```
-git clone git@github.com:Ericson-WebDeveloper/ClickApp.git
+git clone https://github.com/Ericson-WebDeveloper/ClickApp.git
 ```
 
 # api
